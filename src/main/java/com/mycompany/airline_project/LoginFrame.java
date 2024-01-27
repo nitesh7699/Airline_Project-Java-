@@ -157,6 +157,7 @@ public class LoginFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
@@ -182,7 +183,6 @@ public class LoginFrame extends javax.swing.JFrame {
         ResultSet rs = pre.executeQuery();
         
         if(rs.next()!=false){
-            this.setVisible(false);
             Main main = new Main();
             main.setVisible(true);
             this.setVisible(false);
